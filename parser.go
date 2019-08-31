@@ -82,7 +82,7 @@ func (f *Parser) ParseURL(feedURL string) (feed *Feed, err error) {
 	if err != nil {
 		return nil, err
 	}
-	req.Header.Set("User-Agent", "Gofeed/1.0")
+	req.Header.Set("User-Agent", "DSTKFeed/1.0")
 	resp, err := client.Do(req)
 
 	if err != nil {
